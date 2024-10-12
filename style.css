@@ -1,18 +1,25 @@
 .header{
     background-color: lightgreen;
-    align-items: center; 
     color: white;
     font-size: 20px;
-    padding: 20px;
+    
 
 
-}
-header.img{
-    height: 50px;
-    width: 50px;
 }
 body{
 
     background-color: white;
     
+}
+.head{
+    align-items: center;
+    display: flex;
+    
+
+}
+.head img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
 }
