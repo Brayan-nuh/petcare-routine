@@ -3,6 +3,8 @@
     color: white;
     font-size: 20px; 
     display: flex;
+    width: 100%;
+
     
 
 
@@ -27,14 +29,15 @@ body{
 .head input[type=text] {
     border: 1px solid #ccc;
     float: right;
-    gap: 70px;
+    margin: 10%;
+
 
 
 }
 .sidenav{
     height: 100%;
     width: 200px;
-    position: fixed;
+    position: absolute;
     margin: 0;
     background-color: #f1f1f1;
     overflow: auto;
@@ -49,6 +52,7 @@ body{
   color:black;
   display: block;
   padding: 16px;
+  font-size: 14px;
 }
 .sidenav a.active{
     background-color: #04AA6D;
