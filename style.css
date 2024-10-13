@@ -77,6 +77,6 @@ div.content .icon{
 
     padding: 20px;
     align-items: center;
-    gap: 50px;
     display: flex;
+    gap: 50px;
 }
