@@ -73,3 +73,7 @@ div.content{
     color: blue;
 
 }
+div.content .icon{
+    display: flex;
+    padding: 20px;
+}
