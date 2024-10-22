@@ -73,13 +73,6 @@ div.content{
     color: blue;
 
 }
-div.content .icon{
-
-    padding: 20px;
-    align-items: center;
-    display: flex;
-    gap: 50px;
-}
 .dogs{
     float: left;
     width: 30%;
@@ -88,5 +81,18 @@ div.content .icon{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 8px;
   
+}
+.icon{
+    align-items: center;
+    display: block;
+    width: 100%;
+    margin: 10px;
+    font-size: 20px;
+
+    
+    
+    
+
+
 }
 
