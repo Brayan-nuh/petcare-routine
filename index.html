@@ -5,15 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petcare 101</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for the search icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="shortcut icon" href="pet care.png" type="image/x-icon">
 </head>
+
 <body>
     <header class="header">
 
         <div class="head">
             <img src="OIP.jfif" alt="pet"  >
             <h1>PETCARE 101</h1>
-        </div>   
+        </div>  
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button class="search-button">
+                <i class="fas fa-search"></i> <!-- Font Awesome search icon -->
+            </button>
+        </div> 
     </header>
         <div class="sidenav">
         <a href="index.html" class="active">Home</a>
@@ -48,5 +58,12 @@
             <p>&copy; 2024 Petcare 101 | All rights reserved</p>
         </footer>
     </div> 
+    <script>
+        document.querySelector('.search-button').addEventListener('click', function() {
+            const query = document.querySelector('.search-bar input').value;
+            alert(`You searched for: ${query}`);
+            // Here you can implement actual search functionality
+        });
+    </script>
 </body>
 </html>
