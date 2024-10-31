@@ -26,20 +26,24 @@
         </div> 
     </header>
         <div class="sidenav">
-        <a href="index.html" class="active">Home</a>
-        <a href="index1.html" class="">About us</a>
-        <a href="index2.html" class="">Services</a>
-        <a href="index3.html" class="">Blog</a>
-        <a href="index4.html" class="">Contacts</a>
+        <a href="index.html" onclick="showContent('home')">Home</a>
+        <a href="index1.html" onclick="showContent('about')" >About us</a>
+        <a href="index2.html" onclick="showContent('services')" >Services</a>
+        <a href="index3.html" onclick="showContent('blog')">Blog</a>
+        <a href="index4.html" onclick="showContent('contacts')">Contacts</a>
 
         </div>
     <div class="content">
-        <section class="welcome-section">
+        <section  id="home"class="welcome-section tab-content active">
             <h2>Welcome to Petcare 101!</h2>
             <p>We are here to help you provide the best care for your pets. From grooming tips to health advice, our mission is to support you in keeping your furry friends happy and healthy.</p>
         </section>
+        <section id="about" class="services-section tab-content">
+            <h2>About Us</h2>
+            <p>We are passionate about providing the best care for your pets. Our team consists of experienced professionals dedicated to your pet's health and happiness.</p>
+        </section>
     
-        <section class="services-section">
+        <section id="services" class="services-section tab-content">
             <h2>Our Services</h2>
             <div class="service">
                 <h3>Pet Grooming</h3>
@@ -54,16 +58,37 @@
                 <p>Helping you train and bond with your pets effectively.</p>
             </div>
         </section>
-        <footer>
-            <p>&copy; 2024 Petcare 101 | All rights reserved</p>
-        </footer>
+        <section id="blog" class="tab-content">
+            <h2>Blog</h2>
+            <p>Read our latest articles on pet care, training tips, and heartwarming pet stories.</p>
+        </section>
+        <section id="contacts" class="tab-content">
+            <h2>Contact Us</h2>
+            <p>We would love to hear from you! Reach out for any inquiries or assistance regarding your pets.</p>
+        </section>
+        
     </div> 
+    <footer>
+        <p>&copy; 2024 Petcare 101 | All rights reserved</p>
+    </footer>
     <script>
         document.querySelector('.search-button').addEventListener('click', function() {
             const query = document.querySelector('.search-bar input').value;
             alert(`You searched for: ${query}`);
             // Here you can implement actual search functionality
         });
+
+        function showContent(tab) {
+    // Hide all tab contents
+    const contents = document.querySelectorAll('.tab-content');
+    contents.forEach(content => {
+        content.classList.remove('active');
+    });
+
+    // Show the selected tab content
+    const activeTab = document.getElementById(tab);
+    activeTab.classList.add('active');
+}
     </script>
 </body>
 </html>

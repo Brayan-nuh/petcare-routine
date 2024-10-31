@@ -16,13 +16,13 @@ header{
 
     background-color: #3b7a57; 
     color: #fff;
-    padding: 20px ;
+    padding: 20px 30px ;
     text-align: center;
     width: 100%; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
+
 }
 .header.head{
     display: flex;
@@ -72,8 +72,8 @@ header{
     margin-left: auto;
 }
 .sidenav{
-    height: 100vh;
-    width: 200px;
+    height: 100%;
+    width: 220px;
     position: fixed;
     margin: 0;
     background-color: #f1f1f1;
@@ -88,8 +88,12 @@ header{
   display: block;
   padding: 15px 20px;
   font-size: 1em;
-  transition: background 0.3s;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+  margin-bottom: 10px;
+
 }
+
 .sidenav a.active{
     background-color: #04AA6D;
     color: white;
@@ -99,9 +103,13 @@ header{
     color: white;
 }
 .content{   
-    padding: 20px;
+    padding: 30px;
     margin-left: 220px; 
+    flex-grow: 1;
+
 }
+
+
 .welcome-section,
 .services-section {
     margin-bottom: 20px;
