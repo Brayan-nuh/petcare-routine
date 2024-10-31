@@ -69,3 +69,18 @@ body {
         flex-direction: column;
     }
 }
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.nav-buttons .button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #3b7a57;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
