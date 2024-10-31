@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+.content {
+    margin-left: 20px;
+    padding: 20px; /* Standard padding */
+    margin-right: 20px;
+}
+
+.grooming-hygiene h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px; /* Space below heading */
+    color: #2196f3; /* Matching header color */
+}
+
+/* Hygiene Tips */
+.hygiene-tips {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Increased gap between tips */
+}
+
+.tip {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 15px; /* Increased padding for tips */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tip h3 {
+    color: #2196f3; /* Matching header color */
+    margin-bottom: 10px; /* Space below subheadings */
+}
+
+.tip p {
+    color: #555;
+}
+
+.tip:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .sidenav {
+        width: 100%;
+        position: static;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 10px; /* Reduced padding for smaller screens */
+    }
+
+    .hygiene-tips {
+        flex-direction: column;
+    }
+}
