@@ -72,13 +72,13 @@ header{
     margin-left: auto;
 }
 .sidenav{
-    height: 100%;
+    height: 100vh;
     width: 220px;
     position: absolute;
     margin: 0;
     background-color: #f1f1f1;
     overflow: hidden;
-    padding-top: 20px;
+    padding: 20px;
 
 }
 .sidenav a{
@@ -103,9 +103,9 @@ header{
     color: white;
 }
 .content{   
-    padding: 30px;
+    padding: 20px;
     margin-left: 220px; 
-    flex-grow: 1;
+    
 
 }
 
