@@ -71,24 +71,6 @@
     <footer>
         <p>&copy; 2024 Petcare 101 | All rights reserved</p>
     </footer>
-    <script>
-        document.querySelector('.search-button').addEventListener('click', function() {
-            const query = document.querySelector('.search-bar input').value;
-            alert(`You searched for: ${query}`);
-            // Here you can implement actual search functionality
-        });
-
-        function showContent(tab) {
-    // Hide all tab contents
-    const contents = document.querySelectorAll('.tab-content');
-    contents.forEach(content => {
-        content.classList.remove('active');
-    });
-
-    // Show the selected tab content
-    const activeTab = document.getElementById(tab);
-    activeTab.classList.add('active');
-}
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
