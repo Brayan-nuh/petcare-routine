@@ -110,25 +110,23 @@ header{
 }
 
 
-.welcome-section,
-.services-section {
+.tab-content{
     margin-bottom: 20px;
 }
 
-.welcome-section h2,
-.services-section h2 {
+.tab-content h2 {
     font-size: 2em;
     color: #2c3e50;
     margin-bottom: 10px;
 }
-.services-section .service {
+.tab-content .service {
     background-color: #eef2f9;
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 5px;
 }
 
-.services-section .service h3 {
+.tab-content .service h3 {
     font-size: 1.5em;
     color: #4a6fa5;
     margin-bottom: 5px;
