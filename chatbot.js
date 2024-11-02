@@ -37,7 +37,16 @@ function getBotResponse(message) {
         response = "I can help you book an appointment. Please provide the date and time.";
     } else if (message.includes("guide") || message.includes("navigate")) {
         response = "Sure! Let me know what you need help with on the website.";
+    }else if(message.includes("hello")||message.includes("greetings")){
+        response="Hello!How can i help you?.";
+    }else if(message.includes("Thanks")|| message.includes("Thank you")){
+        response="You're welcome. If you have any other questions feel free to ask.";
+    }else if(message.includes("Bye")){
+        response="Goodbye have a great day.";
+    }else{
+        response="Could you please rephrase that? i'm still learning!";
     }
+
 
     setTimeout(() => {
         addMessage("bot", response);
