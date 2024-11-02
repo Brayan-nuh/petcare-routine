@@ -3,6 +3,7 @@ document.querySelector('.search-button').addEventListener('click', function() {
     alert(`You searched for: ${query}`);
     // Here you can implement actual search functionality
 });
+//tab script
 function showContent(sectionId) {
     // Hide all tab content
     const tabs = document.querySelectorAll('.tab-content');
