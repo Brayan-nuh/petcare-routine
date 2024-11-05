@@ -37,7 +37,7 @@ if (!isset($_SESSION["user_id"])) {
         </div> 
     </header>
         <div class="sidenav">
-        <a href="homepage.html" onclick="showContent('home')">Home</a>
+        <a href="homepage.php" onclick="showContent('home')">Home</a>
         <a href="index1.html" onclick="showContent('about')" >About us</a>
         <a href="index2.html" onclick="showContent('services')" >Services</a>
         <a href="index3.html" onclick="showContent('blog')">Blog</a>
