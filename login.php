@@ -50,12 +50,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 // Verify the password using password_verify
                 if (password_verify($password, $user['password'])) {
-                    // Password is correct, set session variable
-                    $_SESSION['username'] = $username;
+                     // Set session variable (assuming 'id' is a column in 'users' table)
+                     $_SESSION['user_id'] = $user['id'];
 
-                    echo "login successful redirecting...";
-                    
-                    header("Location: homepage.html");  // Redirect to a secured page
+                     session_write_close(); // Ensure session is saved
+                    header("Location: homepage.php");  // Redirect to a secured page
                     exit;
                 } else {
                     // Incorrect password
