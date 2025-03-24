@@ -41,8 +41,8 @@ function getBotResponse(message) {
         response="Hello!How can i help you?.";
     }else if(message.includes("Thanks")|| message.includes("Thank you")){
         response="You're welcome. If you have any other questions feel free to ask.";
-    }else if(message.includes("Bye")){
-        response="Goodbye have a great day.";
+    }else if(message.includes("Tips")){
+        response="you can check out,post4.html";
     }else{
         response="Could you please rephrase that? i'm still learning!";
     }
